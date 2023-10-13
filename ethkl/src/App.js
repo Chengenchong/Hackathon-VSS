@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { ethers } from 'ethers'
+import { useState } from "react"
+import './button.css'
+import React, { Component } from 'react'
 
 function App() {
+
+  const [name, setName] = useState()
+  const [symbol, setSymbol] = useState()
+  const [balance, setBalance] = useState()
+
+  const reqBal = async () => {
+
+    //connect wallet
+
+    const wallet = new ethers.BrowserProvider(window.ethereum)
+    const block = await wallet.getBlockNumber()
+
+    console.log(block)
+
+    //get connected address
+
+    const address = await wallet.getSigner()
+    console.log(address.address)
+
+    //create contract
+
+    const token = new ethers.Contract('')
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>
+        Hello World!
+      </p>
+
+      <button onClick={() => reqBal()}>Request Balance</button>
     </div>
   );
 }
