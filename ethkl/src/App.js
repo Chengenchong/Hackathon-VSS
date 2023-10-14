@@ -58,8 +58,10 @@ function App() {
     </svg>
       <input placeholder="Search" type="search" class="input"></input>
     </div>
+
+    
     <div class="text">
-      <h1>ONGOING</h1>
+      <h1>EVENT(s) ONGOING</h1>
     </div>
     <div class="card">
     <div class="card-details">
@@ -67,6 +69,31 @@ function App() {
       <p class="text-body">Competition for HACKERS</p>
     </div>
       <button class="card-button">Apply Now</button>
+    </div>
+    <div class="card2">
+    <div class="card-details2">
+      <p class="text-title2">Hackathon EthKL</p>
+      <p class="text-body2">Competition for HACKERS</p>
+    </div>
+      <button class="card-button2">Apply Now</button>
+    </div>
+
+    <div class="text2">
+      <h1>EVENT(s) UPCOMING</h1>
+    </div>
+    <div class="card3">
+    <div class="card-details3">
+      <p class="text-title3">Hackathon EthKL</p>
+      <p class="text-body3">Competition for HACKERS</p>
+    </div>
+      <button class="card-button3">Apply Now</button>
+    </div>
+    <div class="card4">
+    <div class="card-details4">
+      <p class="text-title4">Hackathon EthKL</p>
+      <p class="text-body4">Competition for HACKERS</p>
+    </div>
+      <button class="card-button4">Apply Now</button>
     </div>
 
     </body>
